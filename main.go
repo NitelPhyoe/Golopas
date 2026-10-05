@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	kernel32                = windows.NewLazySystemDLL("kernel32.d11")
+	kernel32                = windows.NewLazySystemDLL("kernel32.dll")
 	procCreateThread        = kernel32.NewProc("CreateThread")
 	procWaitForSingleObject = kernel32.NewProc("WaitForSingleObject")
 	procRtlMoveMemory       = kernel32.NewProc("RtlMoveMemory")
